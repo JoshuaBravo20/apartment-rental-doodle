@@ -47,6 +47,51 @@ const SAMPLE_LISTINGS = [
     sqft: 1600,
     image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=500',
   },
+  {
+    id: 4,
+    title: 'Charming Cottage',
+    price: 2200,
+    beds: 2,
+    baths: 1,
+    sqft: 900,
+    image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&q=80&w=500',
+  },
+  {
+    id: 5,
+    title: 'Stylish Loft',
+    price: 3000,
+    beds: 1,
+    baths: 1,
+    sqft: 1100,
+    image: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&q=80&w=500',
+  },
+  {
+    id: 6,
+    title: 'Cozy Family Home',
+    price: 2700,
+    beds: 3,
+    baths: 2,
+    sqft: 1500,
+    image: 'https://images.unsplash.com/photo-1560185127-9e4c1c1c1c1c?auto=format&fit=crop&q=80&w=500',
+  },
+  {
+    id: 7,
+    title: 'Elegant Villa',
+    price: 4500,
+    beds: 4,
+    baths: 3,
+    sqft: 2500,
+    image: 'https://images.unsplash.com/photo-1568605114967-8b8e1c1c1c1c?auto=format&fit=crop&q=80&w=500',
+  },
+  {
+    id: 8,
+    title: 'Modern Bungalow',
+    price: 3200,
+    beds: 3,
+    baths: 2,
+    sqft: 1800,
+    image: 'https://images.unsplash.com/photo-1568605114967-8b8e1c1c1c1c?auto=format&fit=crop&q=80&w=500',
+  },
 ];
 
 export function ListingScreen() {
@@ -142,7 +187,7 @@ export function ListingScreen() {
                   className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-2 right-2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                  ${listing.price}/mo
+                $ {listing.price}/mo
                 </div>
               </div>
               <div className="mt-3 space-y-2">
